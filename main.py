@@ -17,7 +17,7 @@ def view_cv():
         # Establecer el tipo de contenido a 'application/pdf'
         response.headers.set('Content-Type', 'application/pdf')
         # Establecer el encabezado para mostrar el PDF en el navegador
-        response.headers.set('Content-Disposition', 'inline', filename='cv.pdf')
+        response.headers.set('Content-Disposition', 'inline', filename='cv/cv.pdf')
         return response
 
 
