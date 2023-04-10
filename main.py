@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def view_cv():
-    cv_path = 'cv.pdf'
+    cv_path = '/cv/cv.pdf'
+
     with open(cv_path, 'rb') as cv_file:
         # Leer el archivo PDF en memoria
         cv_content = cv_file.read()
